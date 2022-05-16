@@ -1,0 +1,70 @@
+<!-- <p>edit-user works!</p>
+<form [formGroup]="editUserForm">
+    <h1>app-edit-user</h1>
+    <input type="text" required placeholder="User Name" formControlName="UserName"/>
+    <input type="password" required placeholder="Password" formControlName="Password"/>
+    <input type="email" required placeholder="Email" formControlName="Email"/>
+    <input type="button" required  (click)="editUser()"/>
+</form> -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+<div class="container">
+
+<div class="card bg-light">
+<article class="card-body mx-auto" style="max-width: 400px;">
+	 <h4 class="card-title mt-3 text-center">Create Account user</h4>
+	<form [formGroup]="editUserForm">
+	<div class="form-group input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user" id="icon" ></i> </span>
+		 </div>
+        <input name="" class="form-control" type="text" required placeholder="User Name" formControlName="UserName">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i id="icon"  class="fa fa-envelope"></i> </span>
+		 </div>
+        <input name="" class="form-control" type="email" required placeholder="Email" formControlName="Email">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i id="icon"   class="fa fa-graduation-cap"></i> </span>
+		</div>
+		<select class="form-control">
+			<option selected=""> Select Nickname </option>
+			<option>Mr</option>
+			<option>Mrs</option>
+			<option>Ms</option>
+		</select>
+	</div> <!-- form-group end.// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i id="icon"  class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control"  required placeholder="Create password" type="password" formControlName="Password">
+    </div> <!-- form-group// -->
+    <!-- repeat passwor -->
+
+    <!-- <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i id="icon"   class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Repeat password" type="password" </div>> -->
+
+    <!-- form-group// -->                                      
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block" (click)="editUser()"> Create Account  </button>
+    </div> <!-- form-group// -->  
+                                                                   
+</form> 
+</article>
+
+
+
+<br><br>
