@@ -1,0 +1,65 @@
+<!-- <form [formGroup]="loginCustomerForm">
+    <input type="text" required placeholder="Customer Name" formControlName="name"/>
+    <input type="password" required placeholder="Password" formControlName="password"/>
+
+</form> -->
+ <!-- <input type="text" required placeholder="Customer Name" formControlName="C   ustomerName"/>   -->
+ 
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords"
+          content="unique login form,leamug login form,boostrap login form,responsive login form,free css html login form,download login form">
+    <meta name="author" content="leamug">
+    <title>Unique Login Form | Bootstrap Templates</title>
+    <!-- <link href="css/style.css" rel="stylesheet" id="style"> -->
+    <!-- Bootstrap core Library -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Google font -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> -->
+    <!-- Font Awesome-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-5 col-md-4 text-center">
+              <div class="form-login"><br>
+                <!-- //<h4>Secure Login</h4> -->
+                <h1>login-admin</h1> 
+
+                <form [formGroup]="loginCustomerForm">
+                    <br>
+                    <input type="text" id="customerName" class="form-control input-sm chat-input" required placeholder="Customer Name" formControlName="name"/>
+                    <br><br>
+                    <input type="password" id="customerPassword" class="form-control input-sm chat-input"  required placeholder="Password" formControlName="password"/>
+                    <br><br>
+                    <!-- <input type="submit" required  (click)="login()"/> -->
+                    <br>
+                </form> 
+
+                <div class="wrapper">
+                        <span class="group-btn">
+                            <!-- <input type="submit" required  (click)/> -->
+                            <button  class="btn btn-danger btn-md" (click)="login()">login <i class="fa fa-sign-in"></i></button>
+                            <button  class="btn btn-danger btn-md" (click)="openDialog()">new customer <i class="fa fa-sign-in"></i></button>
+                        </span>
+                       
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <!--footer-->
+    
+    <!--//footer-->
+</div>
+</body>
+</html>
+
