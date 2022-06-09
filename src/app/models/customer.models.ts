@@ -1,9 +1,18 @@
 export class Customer{
     id:number=0; 
     name:string="";
-    customerTypeId!:number;
+    // customerTypeId!:number;
     logo!:string;
     password:String="";
-    email="";
+    // email="";
+    token!:String;
+    salt!:String;
+/**
+ *
+ */
+constructor() {
+this.id=0;
+    
+}
  }
 

@@ -18,9 +18,12 @@ export class EditCustomerComponent implements OnInit {
 
   ngOnInit(): void {
       this.editCustomerForm=  new FormGroup({
-      CustomerName:new FormControl(this._customerService.currentCustomer?.name),
-      CustomerEmail:new FormControl(this._customerService.currentCustomer?.email),
-      Password:new FormControl(this._customerService.currentCustomer?.password),
+      id:new FormControl(this._customerService.currentCustomer?.id),
+      name:new FormControl(this._customerService.currentCustomer?.name),
+      logo:new FormControl(this._customerService.currentCustomer?.logo),
+      password:new FormControl(this._customerService.currentCustomer?.password),
+      salt:new FormControl(this._customerService.currentCustomer?.salt),
+      token:new FormControl(this._customerService.currentCustomer?.token),
 
     });
     

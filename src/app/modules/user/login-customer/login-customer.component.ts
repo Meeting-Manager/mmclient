@@ -35,9 +35,6 @@ export class LoginCustomerComponent implements OnInit {
 }
 
 
-
-
-
   login(){
      this.customerLoginDTO=this.loginCustomerForm.value; 
      this._customerService.Login(this.customerLoginDTO);

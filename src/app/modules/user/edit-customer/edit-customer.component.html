@@ -20,25 +20,25 @@
 <div class="card bg-light">
 <article class="card-body mx-auto" style="max-width: 400px;">
 	<h4 class="card-title mt-3 text-center">Create Account customer</h4>
-	<form>
+	<form [formGroup]="editCustomerForm">
 	<div class="form-group input-group">
 		<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-user" style="width: 15px;"></i> </span>
 		 </div>
-         <input type="text" class="form-control" required placeholder="Customer Name" formControlName="CustomerName"/>
+         <input type="text" class="form-control" required placeholder="Customer Name" formControlName="name"/>
 
     </div> <!-- form-group// -->
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-envelope" style="width: 15px;"></i> </span>
 		 </div>
-         <input type="text" class="form-control" required placeholder="Email address" formControlName="CustomerEmail"/>
+         <input type="text" class="form-control" required placeholder="Logo" formControlName="logo"/>
     </div> <!-- form-group// -->
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-lock" style="width: 15px;"></i> </span>
 		</div>
-        <input class="form-control" type="password" required placeholder="Password" formControlName="Password"/>
+        <input class="form-control" type="password" required placeholder="Password" formControlName="password"/>
     </div> <!-- form-group// -->
     <!-- <div class="form-group input-group">
     	<div class="input-group-prepend">
@@ -47,9 +47,8 @@
         <input class="form-control" type="password" required placeholder="Repeat password" formControlName="Password"/>
     </div>  --> <!-- form-group//                                      -->
     <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+        <button type="submit"  (click)="editCustomer()" class="btn btn-primary btn-block"> Create Account  </button>
     </div> <!-- form-group// -->      
-    <p class="text-center">Have an account? <a href="">Log In</a> </p>                                                                 
 </form>
 </article>
 </div> <!-- card.// -->
